@@ -34,6 +34,12 @@ ps -ef|grep 名称
 lsof| grep java|grep -v grep
 ```
 
+Jdk keytool 生成证书
+
+```shell
+keytool -genkeypair -alias springtest -keyalg RSA -keysize 2048 -keypass springtest -validity 1000 -keystore ~/.keystore/springtest.jks -storepass springtest
+```
+
 
 
 
